@@ -1,0 +1,92 @@
+
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .foreground-images {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 2;
+            width: calc(100% - 40px); /* full width minus the padding */
+        }
+
+        .image-text-pair {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* space between image and text */
+        }
+
+        .foreground-image {
+            width: 300px;
+            height: auto;
+            box-shadow: 0 0 20px 10px white; /* white shadow around the image */
+        }
+
+        .text-box {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* semi-transparent white background */
+            box-shadow: 0 0 20px 10px white; /* white shadow around the text box */
+            width: calc(100% - 340px); /* full width minus image width and gap */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="thor and mother.png" class="background-image" ;>
+        <div class="foreground-images">
+            <div class="image-text-pair">
+                <img src="thor and mother.png" class="foreground-image"border="2px";>
+                <div class="text-box">
+                    <p><h3>"The Measure of a Person, of a Hero, Is How Well They Succeed at Being Who They Are."</h3>
+
+                        Endgame had a strong theme of the surviving Avengers being true to who they really were, the people under the colorful costumes, and Frigga knew it. Just the way Tony Stark showed his true self by giving his life for the final Snap, Frigga told her son that Thor had to succeed at being who he really was, not try in vain to be some perfect version of him that didn't even exist. That helped Thor find some much-needed inner peace, and that got him ready for his future adventures in Thor: Love and Thunder.
+
+                    </p>
+                </div>
+            </div>
+            <div class="image-text-pair">
+                <img src="thor.png" class="foreground-image"border="2px";>
+                <div class="text-box">
+                    <p><h3>"I'm Still Worthy!"</h3>
+                        Thor sank into a deep depression after the loss of so many Asgardians and his brother Loki against Thanos, and all seemed lost. Then, he was motivated to fight one last battle, and when he revisited Asgard's past and got Mjölnir, he was overjoyed to realize he was still worthy. The hammer wordlessly told him so, and most importantly, Thor told himself so, too.
+                        </p>
+                </div>
+            </div>
+            <div class="image-text-pair">
+                <img src="iron man.png" class="foreground-image"border="2px";>
+                <div class="text-box">
+                    <p><h3>"And I am Iron Man."</h3>
+                        Thanos fought off many Avengers to seize the new Infinity Gauntlet and the six Stones set in it, and Thanos confidently attempted the Snap. Then, Iron Man revealed the six Infinity Stones on his Iron Man suit, ready to perform his own Snap. Tony Stark defiantly reminded Thanos of who exactly he was, then did the deed.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
